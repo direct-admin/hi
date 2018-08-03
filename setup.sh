@@ -31,6 +31,7 @@ rm -rf /root/da.sh
 	
 rm -rf /root/da.sh
 rm -rf /root/setup.sh
+cd /usr/local/directadmin/scripts || exit
 SERVERIP=`cat ./setup.txt | grep ip= | cut -d= -f2`;
 USERNAME=`cat ./setup.txt | grep adminname= | cut -d= -f2`;
 PASSWORD=`cat ./setup.txt | grep adminpass= | cut -d= -f2`;
